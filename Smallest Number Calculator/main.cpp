@@ -7,8 +7,37 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main()
+{
+    //declare three integer variables
+    int first, second, third, smallest;
+    
+    //prompt and get user inputs
+    cout << "Enter an integer: ";
+    cin >> first;
+    cout << "Enter an integer: ";
+    cin >> second;
+    cout << "Enter an integer: ";
+    cin >> third;
+    
+    //find the smallest number
+    if ((first<=second)&&(first<=third))
+    {
+        smallest = first;
+    }
+    else if ((second<=first)&&(second<=third))
+    {
+        smallest = second;
+    }
+    else
+    {
+        smallest = third;
+    }
+    //output the smallest value
+    cout <<"The smallest number is "<<smallest<<endl;
     return 0;
 }
+
+
